@@ -1,0 +1,183 @@
+/* ================================
+   WARNA TEMA (Bukan Biru)
+================================ */
+:root {
+    --primary: #7b2ff7;      /* Ungu */
+    --secondary: #7b6ef0;    /* Pink */
+}
+
+/* ================================
+   NAVBAR
+================================ */
+nav {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+/* ================================
+   HERO PARALLAX (gambar bergerak saat scroll)
+================================ */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    color: white;
+
+    /* PARALLAX */
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url('bencana.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+/* ================================
+   ANIMASI FADE-IN SAAT SCROLL
+================================ */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==== TABEL TEMA HIJAU MODERN ==== */
+.table-bps {
+    width: 90%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 15px;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* HEADER HIJAU */
+.table-bps thead th {
+    background: #0a7d32;          /* Hijau tua elegan */
+    color: white;                 /* Kontras */
+    font-weight: 700;
+    padding: 14px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #0fb94d; /* Hijau terang */
+    text-align: center;
+}
+
+/* BARIS BIASA */
+.table-bps tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #d9f4e0; /* Hijau super lembut */
+}
+
+/* ZEBRA ROW */
+.table-bps tbody tr:nth-child(even) {
+    background: #effff2; /* Hijau muda sangat lembut */
+}
+
+/* ROW HOVER */
+.table-bps tbody tr:hover {
+    background: #dbffdf; /* Hijau lembut */
+    transition: 0.2s;
+}
+
+/* KOLOM NO */
+.table-bps td:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: #0a7d32;
+}
+
+/* ANGKA WARNA HIJAU */
+.table-bps td:not(:first-child) {
+    text-align: center;
+    font-weight: 600;
+    color: #0b923c;  /* Hijau sedang */
+}
+
+/* FOOTER (TOTAL) */
+.table-bps tfoot td {
+    background: #caffd4;
+    font-weight: 700 !important;
+    color: #0a7d32;
+    border-top: 2px solid #0fb94d;
+}
+
+
+
+/* ================================
+   HEADING WARNA MODERN
+================================ */
+h2, h3 {
+    color: var(--primary);
+}
+
+/* ================================
+   KONTAK
+================================ */
+.contact-section {
+    padding: 60px 20px;
+    background: #fff;
+    margin-top: 40px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    background: #f8f9fc;
+    padding: 25px;
+    border-radius: 16px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
